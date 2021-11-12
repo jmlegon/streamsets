@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "75e36fc5-6b7b-4950-a0e5-c622b930c64d",
+		"name": "streamsets-microservice-template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Select User Name from Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Create New User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-SDC-APPLICATION-ID",
+						"value": "microservice",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"jacques\"}"
+				},
+				"url": {
+					"raw": "localhost:8007/rest/v1/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8007",
+					"path": [
+						"rest",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Name from Id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-SDC-APPLICATION-ID",
+						"value": "microservice",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"André\"}"
+				},
+				"url": {
+					"raw": "localhost:8007/rest/v1/user/23",
+					"host": [
+						"localhost"
+					],
+					"port": "8007",
+					"path": [
+						"rest",
+						"v1",
+						"user",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE User from Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-SDC-APPLICATION-ID",
+						"value": "microservice",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8007/rest/v1/user/23",
+					"host": [
+						"localhost"
+					],
+					"port": "8007",
+					"path": [
+						"rest",
+						"v1",
+						"user",
+						"23"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
