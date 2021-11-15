@@ -6,8 +6,8 @@ For that, you can rely on Docker:
 1) Extract the SQL Server 2019 or 2017 images from MS Azure Container Registry
 
 sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
-*************   OU *******************
-docker pull mcr.microsoft.com/mssql/server:2017-latest
+  Or ...
+sudo docker pull mcr.microsoft.com/mssql/server:2017-latest
 
 
 2) launch the container
