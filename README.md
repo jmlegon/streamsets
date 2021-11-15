@@ -19,7 +19,7 @@ sudo docker exec -it sql_server_demo "/opt/mssql/bin/mssql-conf" set sqlagent.en
 
 3) restart SQL Server
 
-sudo docker run -d --name sql_server_demo -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Juanito1!' -p 1433:1433 microsoft/mssql-server-linux --restart=unless-stopped
+sudo docker run -d --name sql_server_demo -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=******' -p 1433:1433 microsoft/mssql-server-linux --restart=unless-stopped
 
 
 4) import the Pipeline into your own Streamsets org : (CRUD-Operations-Microservice-MSSQL.zip)
